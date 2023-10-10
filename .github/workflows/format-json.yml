@@ -2,8 +2,9 @@ on: [push]
 jobs:
   format-json:
     runs-on: ubuntu-latest
-    shell: bash
-    working-directory: ./
+    run:
+      shell: bash
+      working-directory: ./
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
