@@ -7,4 +7,4 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
-      - run: ls -l 'json/*.json' | xargs -I % python3 -m json.tool % > %
+      - run: ls -l '$HOME/json/*.json' | xargs -I % python3 -m json.tool % > %
