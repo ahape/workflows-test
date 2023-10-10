@@ -8,4 +8,4 @@ jobs:
         with:
           python-version: "3.10"
       - run: |
-          ls -l $HOME/json/*.json | xargs -I % python3 -m json.tool % > %
+          ls -l $HOME/json/ | xargs -I % python3 -m json.tool % > %
