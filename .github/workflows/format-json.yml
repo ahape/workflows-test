@@ -10,4 +10,4 @@ jobs:
       - name: Run formatter
         shell: bash
         run: |
-          ls -x ./json/*.json | xargs -I% python3 -m json.tool % %
+          ls -x ./json/*.json | xargs -I% python3 -m json.tool % > %
