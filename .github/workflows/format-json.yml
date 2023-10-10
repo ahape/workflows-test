@@ -11,3 +11,4 @@ jobs:
         shell: bash
         run: |
           ls -1 ./json/*.json | xargs -I% python3 -m json.tool % %
+          git commit -am "Run JSON formatter"
