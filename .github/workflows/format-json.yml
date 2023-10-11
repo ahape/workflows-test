@@ -9,8 +9,11 @@ jobs:
           python-version: "3.10"
       - name: Run formatter
         shell: bash
+        if: env.is-auto-commit != true
         run: |
+          echo "is-auto-commit=true" >> $GITHUB_ENV
           ls -1 ./json/*.json | xargs -I% python3 -m json.tool % %
           git config --global user.email "bot@example.com"
-          git config --global user.name "Bot"
+          git config --global user.name "Action Bot"
           git commit -am "Run JSON formatter"
+          git push
