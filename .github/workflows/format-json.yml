@@ -11,4 +11,6 @@ jobs:
         shell: bash
         run: |
           ls -1 ./json/*.json | xargs -I% python3 -m json.tool % %
+          git config --global user.email "bot@example.com"
+          git config --global user.name "Bot"
           git commit -am "Run JSON formatter"
