@@ -1,5 +1,7 @@
 # workflows-test
 
+See [workflow file](https://github.com/ahape/workflows-test/blob/master/.github/workflows/format-json.yml).
+
 Proof of concept for automating the formatting of JSON files that are touched on mainline branches.
 
 Uses the python package [json.tool](https://github.com/python/cpython/blob/main/Lib/json/tool.py) to do the formatting.
